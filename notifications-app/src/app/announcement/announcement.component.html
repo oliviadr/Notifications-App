@@ -1,0 +1,11 @@
+<div class="announcement-container">
+    <div class="title"><p>{{title}}</p></div>
+    <div class="message"><p>{{message}}</p></div>
+    <div class="author"><p>{{author|byAuthor}}</p></div>
+    <div class="image"><p><img [src]="imageUrl" alt="announcement image" height="30px" width="30px"></p></div>
+    <div>
+        <button mat-icon-button (click)="deleteAnnouncement(id)">
+            <mat-icon>clear</mat-icon>
+          </button>
+    </div>
+</div>
